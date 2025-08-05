@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="author">
+    <meta name="description" content="A simple UUID generator built with go-app.">
+    <meta name="theme-color" content="#2d2c2c">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta property="og:url" content="https:///uuid-gen">
+    <meta property="og:title">
+    <meta property="og:description" content="A simple UUID generator built with go-app.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://">
+    <title></title>
+    <link rel="icon" href="https://raw.githubusercontent.com/maxence-charriere/go-app/master/docs/web/icon.svg">
+    <link rel="apple-touch-icon" href="https://raw.githubusercontent.com/maxence-charriere/go-app/master/docs/web/icon.png">
+    <link href="/uuid-gen/manifest.webmanifest" rel="manifest">
+    <link rel="stylesheet" href="/uuid-gen/app.css" type="text/css">
+    <link href="https://cdn.tailwindcss.com/3.4.1/tailwind.min.css" type="text/css" rel="stylesheet">
+    <script defer src="/uuid-gen/wasm_exec.js"></script>
+    <script defer src="/uuid-gen/app.js"></script>
+  </head>
+  <body>
+    <div class="bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-200 min-h-screen font-sans flex items-center justify-center transition-colors duration-300">
+      <div class="container mx-auto p-8 max-w-2xl text-center">
+        <header class="mb-8">
+          <h1 class="text-5xl md:text-6xl font-bold text-gray-900 dark:text-white mb-2">UUID Generator</h1>
+          <p class="text-xl md:text-2xl text-cyan-600 dark:text-cyan-400">Generate new UUIDs with a single click.</p>
+        </header>
+        <main class="space-y-8">
+          <section>
+            <div class="bg-gray-100 dark:bg-gray-800 p-4 rounded-lg shadow-lg flex items-center justify-between">
+              <span class="text-xl text-gray-900 dark:text-white w-full text-left font-mono tracking-wider" id="uuid-output"></span>
+              <button class="bg-cyan-600 dark:bg-cyan-500 hover:bg-cyan-500 dark:hover:bg-cyan-400 text-white font-bold py-2 px-4 rounded transition-colors ml-4 whitespace-nowrap"></button>
+            </div>
+          </section>
+          <section>
+            <button class="bg-green-600 dark:bg-green-500 hover:bg-green-500 dark:hover:bg-green-400 text-white font-bold py-3 px-8 rounded-full text-xl transition-transform transform hover:scale-105">Generate New UUID</button>
+          </section>
+        </main>
+      </div>
+    </div>
+    <aside id="app-wasm-loader" class="goapp-app-info">
+      <img id="app-wasm-loader-icon" class="goapp-logo goapp-spin" alt="wasm loader icon" src="https://raw.githubusercontent.com/maxence-charriere/go-app/master/docs/web/icon.png">
+      <p id="app-wasm-loader-label" class="goapp-label">0%</p>
+    </aside>
+  </body>
+</html>
