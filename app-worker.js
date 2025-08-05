@@ -1,12 +1,12 @@
 // -----------------------------------------------------------------------------
 // PWA
 // -----------------------------------------------------------------------------
-const cacheName = "app-" + "6e33601cda7d7b03e5ea3a06e14691b3128bcd85";
-const resourcesToCache = ["https://raw.githubusercontent.com/maxence-charriere/go-app/master/docs/web/icon.png","https://cdn.tailwindcss.com/3.4.1/tailwind.min.css","/uuid-gen/web/app.wasm","/uuid-gen/wasm_exec.js","/uuid-gen/manifest.webmanifest","/uuid-gen/app.js","/uuid-gen/app.css","/uuid-gen"];
+const cacheName = "app-" + "241daba6d6e4abfd2c3f2571ea92e6baebcabaca";
+const resourcesToCache = ["https://raw.githubusercontent.com/maxence-charriere/go-app/master/docs/web/icon.png","https://cdn.tailwindcss.com/3.4.1/tailwind.min.css","/uuid.calvinbrown.dev/web/app.wasm","/uuid.calvinbrown.dev/wasm_exec.js","/uuid.calvinbrown.dev/manifest.webmanifest","/uuid.calvinbrown.dev/app.js","/uuid.calvinbrown.dev/app.css","/uuid.calvinbrown.dev"];
 
 self.addEventListener("install", async (event) => {
   try {
-    console.log("installing app worker 6e33601cda7d7b03e5ea3a06e14691b3128bcd85");
+    console.log("installing app worker 241daba6d6e4abfd2c3f2571ea92e6baebcabaca");
     await installWorker();
     await self.skipWaiting();
   } catch (error) {
@@ -23,7 +23,7 @@ self.addEventListener("activate", async (event) => {
   try {
     await deletePreviousCaches(); // Await cache cleanup
     await self.clients.claim(); // Ensure the service worker takes control of the clients
-    console.log("app worker 6e33601cda7d7b03e5ea3a06e14691b3128bcd85 is activated");
+    console.log("app worker 241daba6d6e4abfd2c3f2571ea92e6baebcabaca is activated");
   } catch (error) {
     console.error("error during activation:", error);
   }

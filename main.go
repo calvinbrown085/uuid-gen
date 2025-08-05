@@ -130,7 +130,7 @@ func main() {
 		},
 
 		// Replace "your-github-username.github.io/your-repo-name" with your actual GitHub Pages URL.
-		Resources: app.GitHubPages("/uuid-gen"),
+		Resources: app.GitHubPages("uuid.calvinbrown.dev"),
 	})
 
 	if err != nil {

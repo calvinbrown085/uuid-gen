@@ -6,8 +6,8 @@
     <meta name="description" content="A simple UUID generator built with go-app.">
     <meta name="theme-color" content="#2d2c2c">
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-    <meta name="mobile-web-app-capable" content="yes">
-    <meta property="og:url" content="https:///uuid-gen">
+    <meta content="yes" name="mobile-web-app-capable">
+    <meta property="og:url" content="https:///uuid.calvinbrown.dev">
     <meta property="og:title">
     <meta property="og:description" content="A simple UUID generator built with go-app.">
     <meta property="og:type" content="website">
@@ -15,11 +15,11 @@
     <title></title>
     <link rel="icon" href="https://raw.githubusercontent.com/maxence-charriere/go-app/master/docs/web/icon.svg">
     <link rel="apple-touch-icon" href="https://raw.githubusercontent.com/maxence-charriere/go-app/master/docs/web/icon.png">
-    <link rel="manifest" href="/uuid-gen/manifest.webmanifest">
-    <link href="/uuid-gen/app.css" type="text/css" rel="stylesheet">
+    <link rel="manifest" href="/uuid.calvinbrown.dev/manifest.webmanifest">
+    <link href="/uuid.calvinbrown.dev/app.css" type="text/css" rel="stylesheet">
     <link href="https://cdn.tailwindcss.com/3.4.1/tailwind.min.css" type="text/css" rel="stylesheet">
-    <script defer src="/uuid-gen/wasm_exec.js"></script>
-    <script defer src="/uuid-gen/app.js"></script>
+    <script defer src="/uuid.calvinbrown.dev/wasm_exec.js"></script>
+    <script defer src="/uuid.calvinbrown.dev/app.js"></script>
   </head>
   <body>
     <div class="bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-200 min-h-screen font-sans flex items-center justify-center transition-colors duration-300">
@@ -31,7 +31,7 @@
         <main class="space-y-8">
           <section>
             <div class="bg-gray-100 dark:bg-gray-800 p-4 rounded-lg shadow-lg flex items-center justify-between">
-              <span class="text-xl text-gray-900 dark:text-white w-full text-left font-mono tracking-wider" id="uuid-output"></span>
+              <span id="uuid-output" class="text-xl text-gray-900 dark:text-white w-full text-left font-mono tracking-wider"></span>
               <button class="bg-cyan-600 dark:bg-cyan-500 hover:bg-cyan-500 dark:hover:bg-cyan-400 text-white font-bold py-2 px-4 rounded transition-colors ml-4 whitespace-nowrap"></button>
             </div>
           </section>
@@ -41,9 +41,9 @@
         </main>
       </div>
     </div>
-    <aside class="goapp-app-info" id="app-wasm-loader">
-      <img class="goapp-logo goapp-spin" alt="wasm loader icon" src="https://raw.githubusercontent.com/maxence-charriere/go-app/master/docs/web/icon.png" id="app-wasm-loader-icon">
-      <p id="app-wasm-loader-label" class="goapp-label">0%</p>
+    <aside id="app-wasm-loader" class="goapp-app-info">
+      <img id="app-wasm-loader-icon" class="goapp-logo goapp-spin" alt="wasm loader icon" src="https://raw.githubusercontent.com/maxence-charriere/go-app/master/docs/web/icon.png">
+      <p class="goapp-label" id="app-wasm-loader-label">0%</p>
     </aside>
   </body>
 </html>
