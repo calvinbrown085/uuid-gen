@@ -15,8 +15,8 @@
     <title></title>
     <link rel="icon" href="https://raw.githubusercontent.com/maxence-charriere/go-app/master/docs/web/icon.svg">
     <link rel="apple-touch-icon" href="https://raw.githubusercontent.com/maxence-charriere/go-app/master/docs/web/icon.png">
-    <link href="/uuid-gen/manifest.webmanifest" rel="manifest">
-    <link rel="stylesheet" href="/uuid-gen/app.css" type="text/css">
+    <link rel="manifest" href="/uuid-gen/manifest.webmanifest">
+    <link href="/uuid-gen/app.css" type="text/css" rel="stylesheet">
     <link href="https://cdn.tailwindcss.com/3.4.1/tailwind.min.css" type="text/css" rel="stylesheet">
     <script defer src="/uuid-gen/wasm_exec.js"></script>
     <script defer src="/uuid-gen/app.js"></script>
@@ -41,8 +41,8 @@
         </main>
       </div>
     </div>
-    <aside id="app-wasm-loader" class="goapp-app-info">
-      <img id="app-wasm-loader-icon" class="goapp-logo goapp-spin" alt="wasm loader icon" src="https://raw.githubusercontent.com/maxence-charriere/go-app/master/docs/web/icon.png">
+    <aside class="goapp-app-info" id="app-wasm-loader">
+      <img class="goapp-logo goapp-spin" alt="wasm loader icon" src="https://raw.githubusercontent.com/maxence-charriere/go-app/master/docs/web/icon.png" id="app-wasm-loader-icon">
       <p id="app-wasm-loader-label" class="goapp-label">0%</p>
     </aside>
   </body>

@@ -128,8 +128,9 @@ func main() {
 			// Using Tailwind CSS for styling.
 			"https://cdn.tailwindcss.com/3.4.1/tailwind.min.css",
 		},
+
 		// Replace "your-github-username.github.io/your-repo-name" with your actual GitHub Pages URL.
-		Resources: app.GitHubPages("uuid-gen"),
+		Resources: app.GitHubPages("/uuid-gen"),
 	})
 
 	if err != nil {
